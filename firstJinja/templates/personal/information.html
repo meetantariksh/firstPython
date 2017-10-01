@@ -1,0 +1,15 @@
+{% extends "personal/head.html" %}
+{% block content %}
+<p>Information Recieved</p>
+<ul>
+	{% for i in info %}
+		{% if 'Item 2' in i %}
+			<p><b>{{i}}</b></p>
+		{% else %}
+			<p>{{i}}</p>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+{% include 'personal/inclusions/htmlsnippet.html' %}
+{% endblock %}

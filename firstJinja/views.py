@@ -7,3 +7,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'personal/home.html')
+
+def information(request):
+    return render(request, 'personal/information.html', {'info': ['This is List Item 1','This is List Item 2','This is List Item 3']})
